@@ -1,0 +1,44 @@
+[
+    {
+        "qid" : 0,
+        "keyword":"who",
+        "patterns":[
+            {
+                "pid":1,
+                "pattern":"who [is,was] [NAME]",
+                "pos":[
+                    "PRON AUX NOUN",
+                    "PRON AUX PROPN",
+                    "PRON AUX PROPN PROPN",
+                    "PRON AUX PROPN NOUN"
+                ],
+                "focus":"[NAME]",
+                "answerType":"person"
+            },
+            {
+                "pid":2,
+                "pattern":"who [is,was] [ENTITY]",
+                "pos":[
+                    "PRON AUX *"
+                ],
+                "focus":"[ENTITY]",
+                "answerType":"person"
+            }
+        ]
+    },
+    {
+        "qid":1,
+        "keyword":"contain",
+        "patterns":[
+            {
+                "pid":1,
+                "pattern":"give me images that contain [ENTITY]",
+                "pos":[
+                    "VERB PRON NOUN PRON VERB *"
+                ],
+                "focus":"/q",
+                "answerType":"entitiy"
+            }
+        ]
+    }
+]

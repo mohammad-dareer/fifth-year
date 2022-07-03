@@ -7,21 +7,31 @@
                 "pid":1,
                 "pattern":"who [is,was] [NAME]",
                 "pos":[
-                    "PRON AUX NOUN",
-                    "PRON AUX PROPN",
-                    "PRON AUX PROPN PROPN",
-                    "PRON AUX PROPN NOUN"
+                    "\\s*PRON\\s*AUX\\s*NOUN\\s",
+                    "\\s*PRON\\s*AUX\\s*PROPN\\s*",
+                    "\\s*PRON\\s*AUX\\s*PROPN\\s*PROPN\\s*",
+                    "\\s*PRON\\s*AUX\\s*PROPN\\s*NOUN\\s*"
+                    
                 ],
-                "focus":"[NAME]",
+                "focus":[
+                    "\\s*PRON\\s*AUX\\s*sf\\s*NOUN\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*PROPN\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*NOUN\\s*ef\\s*"                   
+                ],
                 "answerType":"person"
             },
             {
                 "pid":2,
                 "pattern":"who [is,was] [ENTITY]",
                 "pos":[
-                    "PRON AUX *"
+                    
+                    "\\s*PRON\\s*AUX\\s*NOUN\\s*ADP\\s*PROPN\\s*"
                 ],
-                "focus":"[ENTITY]",
+                "focus":[
+                    
+                    "\\s*PRON\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*PROPN\\s*ef\\s*"
+                ],
                 "answerType":"person"
             }
         ]

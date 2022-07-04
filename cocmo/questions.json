@@ -42,12 +42,32 @@
         "patterns":[
             {
                 "pid":1,
+                "pattern":"give me images that contain [NAME]",
+                "pos":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*PROPN\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*NOUN\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*NOUN\\s*CCONJ\\s*NOUN\\s*"
+
+                ],
+                "focus":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*ef\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*CCONJ\\s*NOUN\\s*ef\\s*"
+
+
+                ],
+                "answerType":"person"
+            },
+            {
+                "pid":2,
                 "pattern":"give me images that contain [ENTITY]",
                 "pos":[
-                    "VERB PRON NOUN PRON VERB *"
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*.*\\s*"
                 ],
-                "focus":"/q",
-                "answerType":"entitiy"
+                "focus":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*.*\\s*"
+                ],
+                "answerType":"object"
             }
         ]
     }

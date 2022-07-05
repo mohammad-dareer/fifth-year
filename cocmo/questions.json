@@ -7,16 +7,14 @@
                 "pid":1,
                 "pattern":"who [is,was] [NAME]",
                 "pos":[
-                    "\\s*PRON\\s*AUX\\s*NOUN\\s",
-                    "\\s*PRON\\s*AUX\\s*PROPN\\s*",
-                    "\\s*PRON\\s*AUX\\s*PROPN\\s*PROPN\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(NOUN|PROPN)\\s",
+                    "\\s*PRON\\s*AUX\\s*(NOUN|PROPN)\\s*.*\\s*",
                     "\\s*PRON\\s*AUX\\s*PROPN\\s*NOUN\\s*"
                     
                 ],
                 "focus":[
-                    "\\s*PRON\\s*AUX\\s*sf\\s*NOUN\\s*ef\\s*",
-                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*ef\\s*",
-                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*PROPN\\s*ef\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(NOUN|PROPN)\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*(NOUN|PROPN)\\s*.*\\s*ef\\s*",
                     "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*NOUN\\s*ef\\s*"                   
                 ],
                 "answerType":"person"
@@ -47,14 +45,11 @@
                     "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*PROPN\\s*",
                     "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*NOUN\\s*",
                     "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*NOUN\\s*CCONJ\\s*NOUN\\s*"
-
                 ],
                 "focus":[
                     "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
                     "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*ef\\s*",
                     "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*CCONJ\\s*NOUN\\s*ef\\s*"
-
-
                 ],
                 "answerType":"person"
             },
@@ -79,13 +74,13 @@
                 "pid":1,
                 "pattern":"where is [ENTITY]",
                 "pos":[
-                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*(NOUN|PROPN)\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*PROPN\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*ADP\\s*NOUN\\s*"
                 ],
                 "focus":[
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*(NOUN|PROPN)\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*PROPN\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*"
@@ -95,14 +90,14 @@
                 "pid":2,
                 "pattern":"where is [EVENT] VERB",
                 "pos":[
-                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*(NOUN|PROPN)\\s*VERB\\s*",
                     "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*.*\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
 
                 ],
                 "focus":[
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*(NOUN|PROPN)\\s*VERB\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
@@ -120,15 +115,13 @@
                 "pid":1,
                 "pattern":"when is [ENTITY]",
                 "pos":[
-                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*",
-                    "\\s*SCONJ\\s*VERB\\s*PROPN\\s*",
+                    "\\s*SCONJ\\s*(AUX|VERB)\\s*PROPN\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*PROPN\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*ADP\\s*NOUN\\s*"
                 ],
                 "focus":[
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*ef\\s*",
-                    "\\s*SCONJ\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*(AUX|VERB)\\s*sf\\s*PROPN\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*PROPN\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*"
@@ -138,19 +131,15 @@
                 "pid":1,
                 "pattern":"when is [EVENT] VERB",
                 "pos":[
-                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*",
-                    "\\s*SCONJ\\s*VERB\\s*PROPN\\s*VERB\\s*",
-                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*.*\\s*",
-                    "\\s*SCONJ\\s*VERB\\s*PROPN\\s*VERB\\s*.*\\s*",
+                    "\\s*SCONJ\\s*(AUX|VERB)\\s*PROPN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*(AUX|VERB)\\s*PROPN\\s*VERB\\s*.*\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
 
                 ],
                 "focus":[
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
-                    "\\s*SCONJ\\s*VERB\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
-                    "\\s*SCONJ\\s*VERB\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
+                    "\\s*SCONJ\\s*(AUX|VERB)\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*(AUX|VERB)\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
                 ],
@@ -167,37 +156,56 @@
                 "pid":1,
                 "pattern":"what is [ENTITY]",
                 "pos":[
-                    "\\s*PRON\\s*AUX\\s*NOUN\\s",
-                    "\\s*PRON\\s*AUX\\s*PROPN\\s*",
-                    "\\s*PRON\\s*AUX\\s*PROPN\\s*PROPN\\s*",
-                    "\\s*PRON\\s*AUX\\s*PROPN\\s*NOUN\\s*"
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(NOUN|PROPN)\\s",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(NOUN|PROPN)\\s*.*\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*PROPN\\s*NOUN\\s*"
                 ],
                 "focus":[
-                    "\\s*PRON\\s*AUX\\s*sf\\s*NOUN\\s*ef\\s*",
-                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*ef\\s*",
-                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*PROPN\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*(NOUN|PROPN)\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*(NOUN|PROPN)\\s*.*\\s*ef\\s*",
                     "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*NOUN\\s*ef\\s*"
                 ],
                 "answerType":"location"
             },{
                 "pid":2,
-                "pattern":"where is [EVENT] VERB",
+                "pattern":"what is [EVENT] VERB",
                 "pos":[
-                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*",
-                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*.*\\s*",
-                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*",
-                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*VERB\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*VERB\\s*.*\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
+
 
                 ],
                 "focus":[
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
-                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*VERB\\s*ef\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*VERB\\s*.*\\s*ef\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
+
+                ],
+                "answerType":"location"
+            },
+            {
+                "pid":2,
+                "pattern":"what is the meaning of [EVENT]",
+                "pos":[
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*VERB\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*VERB\\s*.*\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
+
+
+                ],
+                "focus":[
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*VERB\\s*ef\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*VERB\\s*.*\\s*ef\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
+                    "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
+
                 ],
                 "answerType":"location"
             }
-            
         ]
     }
 ]

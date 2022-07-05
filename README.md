@@ -1,2 +1,2 @@
 # fifth-year
-just build and experimenting on it  
+just build the main system and experimenting on it  

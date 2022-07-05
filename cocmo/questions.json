@@ -70,5 +70,134 @@
                 "answerType":"object"
             }
         ]
+    },
+    {
+        "qid":2,
+        "keyword":"where",
+        "patterns":[
+            {
+                "pid":1,
+                "pattern":"where is [ENTITY]",
+                "pos":[
+                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*PROPN\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*ADP\\s*NOUN\\s*"
+                ],
+                "focus":[
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*"
+                ],
+                "answerType":"location"
+            },{
+                "pid":2,
+                "pattern":"where is [EVENT] VERB",
+                "pos":[
+                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*.*\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
+
+                ],
+                "focus":[
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
+                ],
+                "answerType":"location"
+            }
+            
+        ]
+    },
+    {
+        "qid":3,
+        "keyword":"when",
+        "patterns":[
+            {
+                "pid":1,
+                "pattern":"when is [ENTITY]",
+                "pos":[
+                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*",
+                    "\\s*SCONJ\\s*VERB\\s*PROPN\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*PROPN\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*ADP\\s*NOUN\\s*"
+                ],
+                "focus":[
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*"
+                ],
+                "answerType":"time"
+            },{
+                "pid":1,
+                "pattern":"when is [EVENT] VERB",
+                "pos":[
+                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*VERB\\s*PROPN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*.*\\s*",
+                    "\\s*SCONJ\\s*VERB\\s*PROPN\\s*VERB\\s*.*\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
+
+                ],
+                "focus":[
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*VERB\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
+                    "\\s*SCONJ\\s*VERB\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
+                ],
+                "answerType":"time"
+            }
+            
+        ]
+    },
+    {
+        "qid":4,
+        "keyword":"what",
+        "patterns":[
+            {
+                "pid":1,
+                "pattern":"what is [ENTITY]",
+                "pos":[
+                    "\\s*PRON\\s*AUX\\s*NOUN\\s",
+                    "\\s*PRON\\s*AUX\\s*PROPN\\s*",
+                    "\\s*PRON\\s*AUX\\s*PROPN\\s*PROPN\\s*",
+                    "\\s*PRON\\s*AUX\\s*PROPN\\s*NOUN\\s*"
+                ],
+                "focus":[
+                    "\\s*PRON\\s*AUX\\s*sf\\s*NOUN\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*PROPN\\s*ef\\s*",
+                    "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*NOUN\\s*ef\\s*"
+                ],
+                "answerType":"location"
+            },{
+                "pid":2,
+                "pattern":"where is [EVENT] VERB",
+                "pos":[
+                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*PROPN\\s*VERB\\s*.*\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
+
+                ],
+                "focus":[
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*PROPN\\s*VERB\\s*.*\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
+                    "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
+                ],
+                "answerType":"location"
+            }
+            
+        ]
     }
 ]

@@ -174,15 +174,12 @@
                     "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*VERB\\s*.*\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*"
-
-
                 ],
                 "focus":[
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*VERB\\s*ef\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*VERB\\s*.*\\s*ef\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
-
                 ],
                 "answerType":"location"
             },
@@ -202,7 +199,6 @@
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*VERB\\s*.*\\s*ef\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
-
                 ],
                 "answerType":"location"
             }

@@ -36,38 +36,6 @@
     },
     {
         "qid":1,
-        "keyword":"contain",
-        "patterns":[
-            {
-                "pid":1,
-                "pattern":"give me images that contain [NAME]",
-                "pos":[
-                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*PROPN\\s*",
-                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*NOUN\\s*",
-                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*NOUN\\s*CCONJ\\s*NOUN\\s*"
-                ],
-                "focus":[
-                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
-                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*ef\\s*",
-                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*CCONJ\\s*NOUN\\s*ef\\s*"
-                ],
-                "answerType":"person"
-            },
-            {
-                "pid":2,
-                "pattern":"give me images that contain [ENTITY]",
-                "pos":[
-                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*.*\\s*"
-                ],
-                "focus":[
-                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*.*\\s*"
-                ],
-                "answerType":"object"
-            }
-        ]
-    },
-    {
-        "qid":2,
         "keyword":"where",
         "patterns":[
             {
@@ -108,7 +76,7 @@
         ]
     },
     {
-        "qid":3,
+        "qid":2,
         "keyword":"when",
         "patterns":[
             {
@@ -126,7 +94,7 @@
                     "\\s*SCONJ\\s*AUX\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*",
                     "\\s*SCONJ\\s*AUX\\s*NOUN\\s*ADP\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*ef\\s*"
                 ],
-                "answerType":"time"
+                "answerType":"time_unit"
             },{
                 "pid":1,
                 "pattern":"when is [EVENT] VERB",
@@ -149,7 +117,7 @@
         ]
     },
     {
-        "qid":4,
+        "qid":3,
         "keyword":"what",
         "patterns":[
             {
@@ -203,5 +171,108 @@
                 "answerType":"location"
             }
         ]
+    },
+    {
+        "qid":4,
+        "keyword":"not contain",
+        "patterns":[
+            {
+                "pid":1,
+                "pattern":"give me images that not contain [ENTITY]",
+                "pos":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*(NOUN|PROPN)\\s*CCONJ\\s*(NOUN|PROPN)\\s*"
+                ],
+                "focus":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*sf\\s*NOUN\\s*ef\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*sf\\s*NOUN\\s*CCONJ\\s*NOUN\\s*ef\\s*"
+                ],
+                "answerType":"entity"
+            },
+            {
+                "pid":2,
+                "pattern":"give me images that not contain [ENTITY]",
+                "pos":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*.*\\s*"
+                ],
+                "focus":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*PART\\s*VERB\\s*sf\\s*.*\\s*"
+                ],
+                "answerType":"entity"
+            }
+        ]
+    },
+    {
+        "qid":5,
+        "keyword":"contain more",
+        "patterns":[
+            {
+                "pid":1,
+                "pattern":"give me images that contain more [ENTITY]",
+                "pos":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*NOUN\\s*PRON\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*(NOUN|PROPN)\\s*CCONJ\\s*(NOUN|PROPN)\\s*"
+                ],
+                "focus":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*ef\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*CCONJ\\s*NOUN\\s*ef\\s*"
+                ],
+                "answerType":"entity"
+            },
+            {
+                "pid":2,
+                "pattern":"give me images that contain [ENTITY]",
+                "pos":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*.*\\s*"
+                ],
+                "focus":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*.*\\s*"
+                ],
+                "answerType":"entity"
+            }
+        ]
+    },
+    {
+        "qid":5,
+        "keyword":"contain",
+        "patterns":[
+            {
+                "pid":1,
+                "pattern":"give me images that contain [ENTITY]",
+                "pos":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*NOUN\\s*PRON\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*(NOUN|PROPN)\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*(NOUN|PROPN)\\s*CCONJ\\s*(NOUN|PROPN)\\s*"
+                ],
+                "focus":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*PROPN\\s*ef\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*ef\\s*",
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*NOUN\\s*CCONJ\\s*NOUN\\s*ef\\s*"
+                ],
+                "answerType":"entity"
+            },
+            {
+                "pid":2,
+                "pattern":"give me images that contain [ENTITY]",
+                "pos":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*.*\\s*"
+                ],
+                "focus":[
+                    "\\s*VERB\\s*PRON\\s*NOUN\\s*PRON\\s*VERB\\s*sf\\s*.*\\s*"
+                ],
+                "answerType":"entity"
+            }
+        ]
     }
+
 ]

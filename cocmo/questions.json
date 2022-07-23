@@ -133,7 +133,7 @@
                     "\\s*PRON\\s*AUX\\s*sf\\s*(NOUN|PROPN)\\s*.*\\s*ef\\s*",
                     "\\s*PRON\\s*AUX\\s*sf\\s*PROPN\\s*NOUN\\s*ef\\s*"
                 ],
-                "answerType":"location"
+                "answerType":"entity"
             },{
                 "pid":2,
                 "pattern":"what is [EVENT] VERB",
@@ -149,7 +149,7 @@
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*(PROPN|NOUN)\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
                 ],
-                "answerType":"location"
+                "answerType":"entity"
             },
             {
                 "pid":2,
@@ -168,7 +168,7 @@
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*ef\\s*",
                     "\\s*PRON\\s*(AUX|VERB)\\s*sf\\s*NOUN\\s*ADP\\s*NOUN\\s*VERB\\s*.*\\s*ef\\s*"
                 ],
-                "answerType":"location"
+                "answerType":"entity"
             }
         ]
     },
